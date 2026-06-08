@@ -1,0 +1,31 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import BrokerSignupForm from "@/components/BrokerSignupForm.astro";
+---
+
+<BaseLayout
+  title="Broker Signup"
+  description="Partner with 1West SBA. Refer SBA 7(a) deals and grow with a dedicated lending team."
+>
+  <section class="mx-auto grid max-w-6xl gap-12 px-4 py-20 lg:grid-cols-2">
+    <div>
+      <h1 class="text-4xl font-extrabold tracking-tight text-brand">
+        Become a broker partner
+      </h1>
+      <p class="mt-4 text-lg text-slate-700">
+        Refer SBA 7(a) opportunities to 1West SBA and work with a team that
+        moves fast and communicates clearly. Submit your firm's details below to
+        start the partnership conversation.
+      </p>
+      <ul class="mt-8 space-y-3 text-slate-700">
+        <li>Competitive partner compensation</li>
+        <li>Dedicated partner support</li>
+        <li>Transparent deal tracking once onboarded</li>
+      </ul>
+    </div>
+
+    <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+      <BrokerSignupForm />
+    </div>
+  </section>
+</BaseLayout>

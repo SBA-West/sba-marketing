@@ -1,0 +1,27 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+build
+.astro
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Claude Code — personal / session state
+.claude/settings.local.json
+.claude/.credentials.json
+.claude/todos/
+.claude/history/
+.claude/cache/
+CLAUDE.local.md

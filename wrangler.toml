@@ -1,0 +1,5 @@
+# Cloudflare Pages configuration for the 1West SBA marketing site.
+# Build command: pnpm build  →  output directory: dist
+name = "sba-marketing"
+compatibility_date = "2024-11-01"
+pages_build_output_dir = "dist"

@@ -1,0 +1,31 @@
+---
+import CTAButton from "@/components/CTAButton.astro";
+
+interface Props {
+  title?: string;
+  subtitle?: string;
+}
+
+const {
+  title = "SBA 7(a) loans, without the runaround.",
+  subtitle = "Up to $5 million in financing to start, grow, or acquire a small business. A simple application, real underwriters, and a team that answers the phone.",
+} = Astro.props;
+---
+
+<section class="bg-gradient-to-br from-brand-dark via-brand to-brand-light text-white">
+  <div class="mx-auto max-w-6xl px-4 py-24 md:py-32">
+    <div class="max-w-2xl">
+      <p class="mb-4 text-sm font-semibold uppercase tracking-widest text-brand-accent">
+        SBA 7(a) Financing
+      </p>
+      <h1 class="text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">
+        {title}
+      </h1>
+      <p class="mt-6 text-lg text-slate-100">{subtitle}</p>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <CTAButton href="/contact">Start your application</CTAButton>
+        <CTAButton href="/about" variant="secondary">How it works</CTAButton>
+      </div>
+    </div>
+  </div>
+</section>

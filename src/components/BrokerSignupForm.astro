@@ -1,0 +1,65 @@
+---
+// V1 placeholder per HANDOFF "Out of Scope": broker self-serve registration is not built.
+// This form captures a lead only; ops provisions the broker in Clerk manually.
+// TODO: POST to the broker-lead endpoint once sba-broker-api exposes it.
+const labelClass = "block text-sm font-medium text-slate-700";
+const inputClass =
+  "mt-1 block w-full rounded-md border border-slate-300 px-3 py-2 text-sm shadow-sm focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand";
+---
+
+<form
+  name="broker-signup"
+  method="post"
+  action="#"
+  class="space-y-5"
+  aria-label="Broker partner signup"
+>
+  <div>
+    <label for="companyName" class={labelClass}>Company name</label>
+    <input id="companyName" name="companyName" type="text" required class={inputClass} />
+  </div>
+
+  <div class="grid gap-5 sm:grid-cols-2">
+    <div>
+      <label for="contactName" class={labelClass}>Contact name</label>
+      <input id="contactName" name="contactName" type="text" required class={inputClass} />
+    </div>
+    <div>
+      <label for="contactEmail" class={labelClass}>Contact email</label>
+      <input id="contactEmail" name="contactEmail" type="email" required class={inputClass} />
+    </div>
+  </div>
+
+  <div class="grid gap-5 sm:grid-cols-2">
+    <div>
+      <label for="contactPhone" class={labelClass}>Contact phone</label>
+      <input id="contactPhone" name="contactPhone" type="tel" class={inputClass} />
+    </div>
+    <div>
+      <label for="state" class={labelClass}>State</label>
+      <input id="state" name="state" type="text" maxlength="2" placeholder="NY" class={inputClass} />
+    </div>
+  </div>
+
+  <div>
+    <label for="ein" class={labelClass}>EIN (optional)</label>
+    <input id="ein" name="ein" type="text" placeholder="XX-XXXXXXX" class={inputClass} />
+  </div>
+
+  <div>
+    <label for="volume" class={labelClass}>Estimated monthly SBA deal volume</label>
+    <input id="volume" name="volume" type="text" class={inputClass} />
+  </div>
+
+  <p class="text-xs text-slate-500">
+    We review every partner application manually. A member of our team will reach
+    out to complete onboarding.
+  </p>
+
+  <button
+    type="submit"
+    class="inline-flex items-center justify-center rounded-md bg-brand px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-brand-light focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
+  >
+    Request partnership
+  </button>
+</form>

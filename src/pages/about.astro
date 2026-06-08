@@ -1,0 +1,46 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import CTAButton from "@/components/CTAButton.astro";
+---
+
+<BaseLayout
+  title="About"
+  description="1West SBA is a small-business lending team focused exclusively on SBA 7(a) financing."
+>
+  <section class="mx-auto max-w-3xl px-4 py-20">
+    <h1 class="text-4xl font-extrabold tracking-tight text-brand">
+      About 1West SBA
+    </h1>
+    <div class="prose prose-slate mt-8 max-w-none">
+      <p class="text-lg text-slate-700">
+        1West SBA is dedicated to one thing: helping small businesses secure SBA
+        7(a) financing. We pair a modern, streamlined application with
+        experienced underwriters and loan officers who understand the program
+        inside and out.
+      </p>
+      <p class="mt-6 text-slate-700">
+        The SBA 7(a) loan program is the Small Business Administration's primary
+        financing vehicle, offering up to $5 million for working capital,
+        equipment, commercial real estate, debt refinancing, and business
+        acquisition. We help you navigate eligibility, documentation, and the
+        approval process from start to finish.
+      </p>
+      <h2 class="mt-10 text-2xl font-bold text-brand">Our approach</h2>
+      <ul class="mt-4 space-y-3 text-slate-700">
+        <li>
+          <strong>Transparent.</strong> No black-box scoring. A real underwriter reviews every file.
+        </li>
+        <li>
+          <strong>Responsive.</strong> One dedicated loan officer from application to funding.
+        </li>
+        <li>
+          <strong>Focused.</strong> SBA 7(a) is all we do, so we do it well.
+        </li>
+      </ul>
+    </div>
+
+    <div class="mt-12">
+      <CTAButton href="/contact">Talk to a loan officer</CTAButton>
+    </div>
+  </section>
+</BaseLayout>
