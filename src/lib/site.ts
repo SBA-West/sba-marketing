@@ -1,9 +1,9 @@
 // Central site metadata used across pages and SEO tags.
 export const SITE = {
-  name: "1West SBA",
-  title: "1West SBA — SBA 7(a) Loans for Small Business",
+  name: "SBAWest",
+  title: "SBAWest — SBA 7(a) Loans for Small Business",
   description:
-    "1West SBA helps small businesses secure SBA 7(a) financing with a streamlined application, expert underwriting, and dedicated loan officers.",
+    "SBAWest helps small businesses secure SBA 7(a) financing with a streamlined application, expert underwriting, and dedicated loan officers.",
   url: "https://sba.1west.com",
   ogImage: "/og-default.svg",
   email: "sba@1west.com",
