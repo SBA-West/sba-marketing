@@ -1,6 +1,7 @@
 # sba-marketing
 
 Public marketing site for **1West SBA** — SBA 7(a) small-business lending.
+https://sba-marketing.pages.dev/
 
 Built with [Astro](https://astro.build) + TypeScript + Tailwind CSS. Deployed to
 **Cloudflare Pages** as a fully static site.
